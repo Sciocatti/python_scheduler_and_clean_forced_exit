@@ -16,6 +16,11 @@ The idea is to be able to schedule large jobs, and have them finish before being
 ```python
 from python_scheduler_and_clean_forced_exit import ScheduledTask, GracefulKiller
 ```
+or
+```
+import python_scheduler_and_clean_forced_exit as scheduler
+killer = scheduler.GracefulKiller()
+```
 
 ## Todo
 Very rough implementaion.
