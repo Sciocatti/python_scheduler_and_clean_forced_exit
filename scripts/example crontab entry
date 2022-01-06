@@ -1,0 +1,3 @@
+
+# Example crontab entry. Replace `path_to_root` with the the root directory of this repo, then add the line to the bottom of `crontab -e` as the user you want to run the script.
+*/1 * * * * flock -n path_to_root_folder/cronjob.lock path_to_root_folder/scripts/run_sched_processing.sh 1> path_to_root_folder/logs/sched.log 2>> path_to_root_folder/logs/sched_err.log
